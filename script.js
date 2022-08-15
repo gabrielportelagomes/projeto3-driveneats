@@ -82,7 +82,7 @@ function enableFinalization() {
 function sendOrder() {
     total = (priceFood + priceDrink + priceDessert).toFixed(2);
 
-    window.open('https:wa.me/?text=' + encodeURIComponent(`Olá, gostaria de fazer o pedido: \n
+    window.open('https://wa.me/?text=' + encodeURIComponent(`Olá, gostaria de fazer o pedido: \n
     - Prato: ${itemFood} \n
     - Bebida: ${itemDrink} \n
     - Sobremesa: ${itemDessert} \n
