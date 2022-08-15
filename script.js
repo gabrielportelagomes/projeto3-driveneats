@@ -82,10 +82,14 @@ function enableFinalization() {
 function sendOrder() {
     total = (priceFood + priceDrink + priceDessert).toFixed(2);
 
-    window.open('https://wa.me/?text=' + encodeURIComponent(`Olá, gostaria de fazer o pedido: \n
+    let orderList = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n
     - Prato: ${itemFood} \n
     - Bebida: ${itemDrink} \n
     - Sobremesa: ${itemDessert} \n
-    Total: R$ ${total}`), '_blank');
+    Total: R$ ${total}`);
+
+    let whatsappLink = "https://wa.me/?text=" + orderList;
+
+    window.open(whatsappLink, '_blank').focus();
 }
 
