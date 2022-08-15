@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+
+/* font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif; */
+
+.confirmOrder {
+   width: 377px;
+   height: 353px; 
+   background-color: 
+   #50D074;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 9px;
+   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.topOrder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 29px;
+    margin-bottom: 28px;
+}
+
+.summary {
+    width: 326px;
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary div {
+    width: 326px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.summary div:last-child {
+    font-weight: 700;
+}
+
+.confirmButton {
+    background-color: #ffffff;
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+}
+
+.cancel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}

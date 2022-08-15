@@ -227,8 +227,39 @@
             <div>
                 <h3>Selecione os 3 itens <br> para fechar o pedido</h3>
             </div>
-            <div onclick="sendOrder()">
+            <div onclick="closeOrder()">
                 <h3>Fechar pedido</h3>
+            </div>
+        </div>
+        <div class="confirmBackground hidden">
+            <div class="confirmOrder">
+                <div class="topOrder">
+                    <h8>Confirme seu pedido</h8>
+                </div>
+                <div class="summary">
+                    <div>
+                        <h9 class="food-list"></h9>
+                        <h9 class="food-price"></h9>
+                    </div>
+                    <div>
+                        <h9 class="drink-list"></h9>
+                        <h9 class="drink-price"></h9>
+                    </div>
+                    <div>
+                        <h9 class="dessert-list"></h9>
+                        <h9 class="dessert-price"></h9>
+                    </div>
+                    <div>
+                        <h8>Total</h8>
+                        <h8 class="total-price"></h8>
+                    </div>
+                </div>
+                <div class="confirmButton" onclick="sendOrder(this)">
+                    <h8>Tudo certo, pode pedir!</h8>
+                </div>
+                <div class="cancel">
+                    <h10 onclick="cancel(this)">Cancelar</h10>
+                </div>
             </div>
         </div>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
