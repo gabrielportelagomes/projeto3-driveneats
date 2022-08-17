@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DrivenEats</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div>
+                <h1>DrivenEats</h1>
+            </div>
+            <div>
+                <h4>Sua comida em 6 minutos</h4>
+            </div>
+        </div>
+        <div class="page">
+            <div class="category-food">
+                <div>
+                    <h2>Primeiro, seu prato</h2>
+                </div>
+                <div class="options-food">
+                    <div class="option-food" onclick="selectFood(this)">
+                        <div><img src="img/frango_yin_yang.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Frango Ying Yang</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Um pouco de batata, <br> um pouco de salada</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>14,90</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-food" onclick="selectFood(this)">
+                        <div><img src="img/maria-isabel.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Maria Isabel</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Arroz Maria Isabel, <br> farofa de banana</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>18,90</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-food" onclick="selectFood(this)">
+                        <div><img src="img/peixe.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Peixe Grelhado</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Um pouco de arroz, <br> um pouco de salada</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>15,90</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-food" onclick="selectFood(this)">
+                        <div><img src="img/picanha.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Picanha</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Porção de batata, <br> um pouco de salada</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>21,00</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="category-drink">
+                <div>
+                    <h2>Agora, sua bebida</h2>
+                </div>
+                <div class="options-drink">
+                    <div class="option-drink" onclick="selectDrink(this)">
+                        <div><img src="img/coquinha_gelada.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Coquinha gelada</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Lata 350ml</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>4,90</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-drink" onclick="selectDrink(this)">
+                        <div><img src="img/cajuina.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Cajuína</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Garrafa 500ml</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>8,60</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-drink" onclick="selectDrink(this)">
+                        <div><img src="img/suco.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Suco natural</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Copo 350ml</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>6,40</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-drink" onclick="selectDrink(this)">
+                        <div><img src="img/agua.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>àgua mineral</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Garrafa 500ml</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>3,50</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="category-dessert">
+                <div>
+                    <h2>Por fim, sua sobremesa</h2>
+                </div>
+                <div class="options-dessert">
+                    <div class="option-dessert" onclick="selectDessert(this)">
+                        <div><img src="img/pudim.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Pudim</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Apenas pudim</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>7,90</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-dessert" onclick="selectDessert(this)">
+                        <div><img src="img/cocada.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Cocada</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Apenas cocada</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>4,50</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-dessert" onclick="selectDessert(this)">
+                        <div><img src="img/sorvete.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Sorvete</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Apenas sorvete</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>8,30</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="option-dessert" onclick="selectDessert(this)">
+                        <div><img src="img/brownie.png" /></div>
+                        <div class="text">
+                            <div class="item-name">
+                                <h5>Brownie</h5>
+                            </div>
+                            <div class="item-description">
+                                <h7>Apenas brownie</h7>
+                            </div>
+                            <div class="item-price">
+                                <h6>R$ <span>5,70</span></h6>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <h3>Selecione os 3 itens <br> para fechar o pedido</h3>
+            </div>
+            <div onclick="closeOrder()">
+                <h3>Fechar pedido</h3>
+            </div>
+        </div>
+        <div class="confirmBackground hidden">
+            <div class="confirmOrder">
+                <div class="topOrder">
+                    <h8>Confirme seu pedido</h8>
+                </div>
+                <div class="summary">
+                    <div>
+                        <h9 class="food-list"></h9>
+                        <h9 class="food-price"></h9>
+                    </div>
+                    <div>
+                        <h9 class="drink-list"></h9>
+                        <h9 class="drink-price"></h9>
+                    </div>
+                    <div>
+                        <h9 class="dessert-list"></h9>
+                        <h9 class="dessert-price"></h9>
+                    </div>
+                    <div>
+                        <h8>Total</h8>
+                        <h8 class="total-price"></h8>
+                    </div>
+                </div>
+                <div class="confirmButton" onclick="sendOrder(this)">
+                    <h8>Tudo certo, pode pedir!</h8>
+                </div>
+                <div class="cancel">
+                    <h10 onclick="cancel(this)">Cancelar</h10>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
